@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body id="background">
+
+    <div class="loginbox">
+
+        <img src="images/user-male-circle (1).png" class="avatar">
+
+        <div class="container">
+            <h1>Login</h1>
+            <form id="registration_form">
+                <div>
+                    <label for="user">Firstname</label>
+                    <span class="error_form" id="fname_error_message"></span>
+                    <input type="text" id="form_fname" placeholder="First name" class="form-control">
+                </div>
+                <div>
+                    <label for="user">Lastname</label>
+                    <span class="error_form" id="sname_error_message"></span>
+                    <input type="text" id="form_sname" placeholder="Last name" class="form-control">
+                </div>
+                <div>
+                    <label for="user">Date Of Birth</label>
+                    <span class="error_form" id="dob_error_message"></span>
+                    <input id="form_dob" placeholder="DOB" min="1900-01-01" max="2099-09-13" type="date"
+                        class="form-control">
+                </div>
+                <div>
+                    <label for="user">Mobile no.</label>
+                    <span class="error_form" id="mobile_error_message"></span>
+                    <input type="number" id="form_mobile" placeholder="Phone" class="form-control">
+                </div>
+                <div>
+                    <label for="user">PAN No.</label>
+                    <span class="error_form" id="pan_error_message"></span>
+                    <input type="text" id="form_pan" placeholder="PAN NO" class="form-control">
+                </div>
+
+                <div>
+                    <label for="user">Address</label>
+                    <span class="error_form" id="address_error_message"></span>
+                    <input type="text" id="form_address" placeholder="address" class="form-control">
+                </div>
+
+                <input type="submit" value="Register" name="" >
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
